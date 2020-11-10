@@ -8,7 +8,7 @@
         <field name="arch" type="xml">
             <xpath expr="//tree" position="attributes">
                 <!--<attribute name="decoration-danger">approved == False</attribute>-->
-                <attribute name="decoration-danger">quantity > stock_min</attribute>
+                <attribute name="decoration-danger">quantity &lt; stock_min</attribute>
             </xpath>
             <xpath expr="//field[@name='quantity']" position="after">
                 <field name="stock_min" string="Stock Mínimo"/>
